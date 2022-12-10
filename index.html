@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        overflow-x:hidden;
+        padding: 0;
+        margin: 0;
+        /* background-color: black; */
+    }
+    #navbar{
+
+        display: inline-block;
+        background-color: white ;
+        /* padding: 10px;s */
+        /* margin-top: 10px; */
+        z-index: 2;
+        /* position: sticky; */
+        top:0px;
+        /* overflow: hidden; */
+        color: black;
+        height: 30px;
+        width:1550px;
+    }
+    div>ol{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        /* padding: 10px; */
+        /* position: sticky; */
+        /* margin: 10px 10px; */
+        justify-content: center ;
+        position: relative;
+    }
+    div>ol>li{
+        padding-left: 10px;
+        padding-right: 10px ;
+    }
+    .navitems{
+        margin: 5px 5px;
+    }
+    #logo2{
+        position: relative;
+        top:10px;
+        left: 4vw;
+    }
+    #x{
+        position: relative;
+        left: 3vw;
+        bottom: 0.7vw;
+        margin: 10px;
+        font-weight: 800;
+        font-size: larger;
+    }
+    ol>li{
+        position:relative ;
+        bottom: 50px;
+    }
+    .navitems:hover{
+        color: deepskyblue
+    }
+    #s1{
+       position: absolute;
+       bottom: 20px;
+       left: 85vw;
+       top: 15px;
+       height: 40px;
+       width:160px;
+       border-color:rgb(58, 124, 102);
+       border-radius: 42%;
+    }
+    #search{
+        position: relative;
+        bottom: 30px;
+        left: 18px;
+    }
+    #src{
+        color: deepskyblue;
+    }
+    #moon{
+        position: relative;
+        bottom: 90px;
+        float: right;
+        right: 250px;
+    }
+    #box{
+        position: relative;
+        bottom: 90px;
+        float: right;
+        right: 190px;
+    }
+    #line{
+        position: relative;
+        bottom: 94px;
+        float: right;
+        right: 120px;
+    }
+    #man{
+        border-radius: 500px;
+        position: relative;
+        bottom: 96px;
+        float: right;
+        right: 40px;
+    }
+    #john{
+        position: relative;
+        bottom: 100px;
+        float: right;
+        /* right: 0.5px; */
+        left: 100px;
+        font-weight: 600;
+   }
+   #hr1{
+    position: relative;
+    bottom: 10px;
+   }
+   #part2{
+    display: flex;
+    /* width: 1000px; */
+    height: 50px;
+    /* z-index: 3; */
+   }
+   #pd{
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    /* margin: 10px; */
+    height: 30px;
+    width: 200px;
+    /* border: 1px solid; */
+    /* height: 10px;
+    width: 20px;
+    border: 2px solid; */
+    border-radius: 10px;
+    background-color:gainsboro ;
+   }
+   #ui{
+    
+    display: flex;
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color:gainsboro ;
+    /* border: 2px solid; */
+   }
+   #pd1{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+   }
+   #pd11{
+    position: relative;
+    left: 35px;
+    top: 5px;
+   }
+   #ui1{
+    position: relative;
+    bottom: 10px;
+    left: 50px;
+   }
+   #ui11{
+    position: relative;
+    top: 6px;
+    left: 60px;
+   }
+   #search{
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+   }
+   #nd
+   {
+    display: flex;
+    /* padding: 5px; */
+    margin-left: 200px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    /* border: x solid; */
+    border-radius: 10px;
+    background-color:whitesmoke ;
+   }
+   #nd1{
+    position: relative;
+    top: 3px;
+    left: 5px;
+   }
+   #nd11{
+    position: relative;
+    bottom: 10px;
+    left: 17px;
+   }
+   #jt
+   {
+    /* margin-left: 70px; */
+    display: flex;
+    height: 30px;
+    width: 200px;
+    /* border: x solid; */
+    border-radius: 10px;
+    background-color:whitesmoke ;
+   }
+   #sr{
+    /* margin-left: 50px; */
+    display: flex;
+    height: 30px;
+    width: 200px;
+    /* border: x solid; */
+    border-radius: 10px;
+    background-color:whitesmoke ;
+   }
+   #jt1{
+    position: relative;
+    left: 7px;
+    top: 2px;
+   }
+   #jt11{
+    
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+   }
+   #sr11{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+   }
+   #sr1{
+    position: relative;
+    left: 7px;
+    top: 2px;
+   }
+   #fj{
+    /* display: flex; */
+    position: relative;
+    bottom: 10px;
+    top: 3px;
+    /* margin-left: 50px; */
+    height: 30px;
+    width: 100px;
+    /* border: x solid; */
+    border-top-right-radius: 10px;
+    background-color: blueviolet;
+    /* margin-bottom: 20px; */
+    border-bottom-right-radius:10px ;
+   }
+   #fj1{
+    position: relative;
+    left: 10px;
+    color: aliceblue;
+    bottom: 10px;
+   }
+   #part3{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+   }
+   #part4{
+    display: flex;
+    margin: 30px;
+   }
+   #h31{
+    position: relative;
+    left: 30px;
+   }
+   .cards{
+    height: 250px;
+    width: 600px;
+    /* border: 2px solid; */
+    margin: 20px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+   }
+   .btn1{
+    transition: 0.1s ease-in-out;
+
+   }
+   .cards:hover{
+    transform: scale(1.1);
+   }
+   .btn1:hover{
+    transform: scale(1.1);
+    background-color: bisque;
+   }
+   #part31{
+    margin: 10px;
+   }
+   #part333{
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color:burlywood;
+   }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <span  id="logo1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89dl8CM6orf965jAqivWJ-3fKKXnRrQ7izg&usqp=CAU" id="logo2" height="50px"><span id="x">Milao</span></span>
+        <ol >
+            <li class="navitems" id="src">Search Naukri</li>
+            <li class="navitems">Company Review</li>
+            <li class="navitems">Find Salaries</li>
+        </ol>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8y9xqkhH19aNV1FzBRovyjqMXVkmMfGp0nw&usqp=CAU" alt="" height="20px" id="moon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fO24xcy335hGBD3vdUsYkzLIZ9DoycK6oPF40dxmGlkChOClpW26vmGtTits_2i38WE&usqp=CAU" alt="" height="20px" id="box">
+        <img src="https://play-lh.googleusercontent.com/JXskSfLl7dIpgr14NhfuHTmSeKfdhnUF9YkQdwtEOD4lhvlxkQwXr1mww0Wl6t1Doa0" alt="" id="line" height="40px">
+        <img src="https://cdn.xxl.thumbs.canstockphoto.com/portrait-of-young-man-smiling-background-stock-photography_csp12568100.jpg" alt="" id="man" height="45px">
+        <p id="john">JOHN DOE</p>
+    </div>
+    <hr id="hr1">
+    <div id="part2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RBmrJj_6UN_WfdM3BM0D8XGs2dDSrDC4Hg&usqp=CAU" alt="" height="22px" id="search">
+        <div id="pd">
+            <p id="pd1">Product Designer</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpmyPewsgPC-Ys3A9S9HFw0dwCAcj7J3Ctnw&usqp=CAU" alt="" height="20px" id="pd11">
+        </div>
+        <div id="ui">
+            <p id="ui1">UI Designer</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpmyPewsgPC-Ys3A9S9HFw0dwCAcj7J3Ctnw&usqp=CAU" alt="" height="20px" id="ui11">
+        </div>
+        <div id="nd">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIBrR6S-MlmCXfziQfIKDn2iNa4wY1VpBeXg&usqp=CAU" alt="" id="nd1" height="25px">
+            <p id="nd11">New Delhi,India</p>
+        </div>
+        <div id="jt">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYgnglwuv4beql7uhbBPhqRYFwrnEe5fjzA&usqp=CAU" alt="" id="jt1" height="22px">
+            <p id="jt11">Job Type</p>
+        </div>
+        <div id="sr">
+            <img src="https://www.shutterstock.com/image-vector/save-money-icon-salary-invest-260nw-1476796904.jpg" alt="" id="sr1" height="22px">
+            <p id="sr11">Salary Range</p>
+        </div>
+        <div id="fj">
+            <p id="fj1">Find Job</p>
+        </div>
+    </div>
+    <h3 id="h31">Showing 46 Jobs</h3>
+    <div id="part3">
+        <div id="part31">
+            <div id="part333">
+                <h3>
+                Create Job Alert  
+                </h3>
+                <p>Create a job alret now and never miss a job</p>
+                <p><input type="text" id="vehicle1" name="vehicle1" value="enter job keyword">
+                <br>
+                <br>
+                <button class="btn1"> Create Job affairs</button></p>
+            </div>
+            <h3> Type of Employment</h3>
+            <form action="">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Full time Jobs</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Part Time Jobs</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Remote Jobs</label><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="t">
+                <label for="vehicle4"> Full time Jobs</label><br>
+                <input type="checkbox" id="vehicle5" name="vehicle5" value="a">
+                <label for="vehicle5"> Part Time Jobs</label><br>
+                <input type="checkbox" id="vehicle6" name="vehicle6" value="n">
+                <label for="vehicle6"> Remote Jobs</label>
+
+                <!-- <input type="submit" value="Submit"> -->
+              </form>
+            <h3> Seniority Level</h3>
+            <form action="">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Full time Jobs</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Part Time Jobs</label><br>
+                <!-- <input type="submit" value="Submit"> -->
+              </form>
+        </div>
+        
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>UI/UX Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+        </div>
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>Sr. Product Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+
+        </div>
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>User Experience Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+
+        </div>
+    </div>
+    <div id="part4">
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>Product Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+
+        </div>
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>UI/UX Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+
+        </div>
+        <div class="cards">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCkhkbOS024ajR_rNHtBWwWlwbVzie8s8AA&usqp=CAU" alt="" height="50px">
+            <h4>UI Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt harum, aut eius doloribus eaque iste molestiae. Cum, iusto a.</p>
+            <p>Full Time &nbsp Min 1 Yr &nbsp Senior Level</p>
+            <button class="btn1">Apply Now <span><button>Messages</button></span></button>
+
+        </div>
+    </div>
+    
+</body>
+</html>
